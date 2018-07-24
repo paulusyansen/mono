@@ -1,0 +1,11 @@
+version: '2'
+services:
+    mono-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/mono/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=mono
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
